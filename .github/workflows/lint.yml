@@ -1,0 +1,24 @@
+name: Lint Tests
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 8                
+      - name: install
+        run: pnpm install
+      - name: Check ESLint
+        run: pnpm run lint
+      - name: Check Code Formatting
+        run: pnpm run format

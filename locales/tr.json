@@ -1,0 +1,53 @@
+{
+  "RootLayout": {
+    "title": "SaasHQ",
+    "description": "SaasHQ, NextJS üzerine kurulu açık kaynaklı bir CRM'dir."
+  },
+  "ModuleMenu": {
+    "dashboard": "Kontrol Paneli",
+    "crm": {
+      "title": "Satış",
+      "accounts": "Şirketler",
+      "opportunities": "Fırsatlar",
+      "contacts": "Kişiler",
+      "leads": "Potansiyel Müşteriler"
+    },
+    "projects": "Projeler",
+    "emails": "E-postalar",
+    "tasks": "Görevler",
+    "invoices": "Faturalar",
+    "reports": "Raporlar",
+    "documents": "Belgeler",
+    "storage": "Depolama",
+    "settings": "Yönetim"
+  },
+  "DashboardPage": {
+    "containerTitle": "Kontrol Paneli",
+    "totalRevenue": "Toplam Gelir",
+    "containerDescription": "SaasHQ'ya hoş geldiniz, burada işinizle ilgili tüm önemli bilgileri görebilirsiniz.",
+    "expectedRevenue": "Beklenen Gelir",
+    "activeUsers": "Aktif Kullanıcılar",
+    "accounts": "Şirketler",
+    "opportunities": "Fırsatlar",
+    "contacts": "Kişiler",
+    "leads": "Potansiyel Müşteriler",
+    "projects": "Projeler",
+    "tasks": "Görevler",
+    "myTasks": "Görevlerim",
+    "invoices": "Faturalar",
+    "documents": "Belgeler",
+    "storage": "Depolama"
+  },
+  "RegisterComponent": {
+    "cardTitle": "Yeni Hesap Oluştur",
+    "cardDescription": "Giriş yaparak hesap oluşturun",
+    "label": "Dil",
+    "locale": "{locale, select, de {Almanca} en {İngilizce} cz {Çekçe} uk {Ukraynaca} other {Bilinmeyen}}"
+  },
+  "CrmModuleMenuComponent": {
+    "menuTitle": "Satış",
+    "cardDescription": "Giriş yaparak hesap oluşturun",
+    "label": "Dil",
+    "locale": "{locale, select, de {Almanca} en {İngilizce} cz {Çekçe} uk {Ukraynaca} other {Bilinmeyen}}"
+  }
+}

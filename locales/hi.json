@@ -1,0 +1,53 @@
+{
+  "RootLayout": {
+    "title": "SaasHQ",
+    "description": "SaasHQ is an open source CRM build on top of NextJS."
+  },
+  "ModuleMenu": {
+    "dashboard": "डैशबोर्ड",
+    "crm": {
+      "title": "बिक्री",
+      "accounts": "कंपनियाँ",
+      "opportunities": "अवसर",
+      "contacts": "संपर्क",
+      "leads": "नेतृत्व"
+    },
+    "projects": "प्रोजेक्ट्स",
+    "emails": "ईमेल",
+    "tasks": "कार्य",
+    "invoices": "चालान",
+    "reports": "रिपोर्ट्स",
+    "documents": "दस्तावेज़",
+    "storage": "स्टोरेज",
+    "settings": "सेटिंग्स"
+  },
+  "DashboardPage": {
+    "containerTitle": "डैशबोर्ड",
+    "totalRevenue": "कुल राजस्व",
+    "containerDescription": "स्वागत है सासएचक्यू में, यहाँ आप अपने व्यवसाय के बारे में सभी महत्वपूर्ण जानकारी देख सकते हैं।",
+    "expectedRevenue": "प्रत्याशित राजस्व",
+    "activeUsers": "सक्रिय उपयोगकर्ता",
+    "accounts": "कंपनियाँ",
+    "opportunities": "अवसर",
+    "contacts": "संपर्क",
+    "leads": "नेतृत्व",
+    "projects": "प्रोजेक्ट्स",
+    "tasks": "कार्य",
+    "myTasks": "मेरे कार्य",
+    "invoices": "चालान",
+    "documents": "दस्तावेज़",
+    "storage": "स्टोरेज"
+  },
+  "RegisterComponent": {
+    "cardTitle": "नया खाता बनाएं",
+    "cardDescription": "लॉगिन करके खाता बनाएं",
+    "label": "भाषा",
+    "locale": "{locale, select, de {जर्मन} en {अंग्रेज़ी} cz {चेक} uk {यूक्रेनियन} other {अज्ञात}}"
+  },
+  "CrmModuleMenuComponent": {
+    "menuTitle": "बिक्री",
+    "cardDescription": "लॉगिन करके खाता बनाएं",
+    "label": "भाषा",
+    "locale": "{locale, select, de {जर्मन} en {अंग्रेज़ी} cz {चेक} uk {यूक्रेनियन} other {अज्ञात}}"
+  }
+}

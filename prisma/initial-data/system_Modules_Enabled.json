@@ -1,0 +1,57 @@
+[
+    {
+      "name": "crm",
+      "enabled": true,
+      "position": 1
+    },
+    {
+      "name": "projects",
+      "enabled": true,
+      "position": 2
+    },
+    {
+      "name": "emails",
+      "enabled": true,
+      "position": 3
+    },
+    {
+      "name": "secondBrain",
+      "enabled": true,
+      "position": 4
+    },
+    {
+      "name": "employee",
+      "enabled": true,
+      "position": 5
+    },
+    {
+      "name": "invoice",
+      "enabled": true,
+      "position": 6
+    },
+    {
+      "name": "workflow",
+      "enabled": true,
+      "position": 7
+    },
+    {
+      "name": "reports",
+      "enabled": true,
+      "position": 8
+    },
+    {
+      "name": "documents",
+      "enabled": true,
+      "position": 9
+    },
+    {
+      "name": "databox",
+      "enabled": false,
+      "position": 10
+    },
+    {
+      "name": "openai",
+      "enabled": true,
+      "position": 11
+    }
+  ]

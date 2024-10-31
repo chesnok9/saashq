@@ -1,0 +1,53 @@
+{
+  "RootLayout": {
+    "title": "SaasHQ",
+    "description": "SaasHQ는 NextJS 위에 구축된 오픈 소스 CRM입니다."
+  },
+  "ModuleMenu": {
+    "dashboard": "대시보드",
+    "crm": {
+      "title": "영업",
+      "accounts": "회사",
+      "opportunities": "기회",
+      "contacts": "연락처",
+      "leads": "리드"
+    },
+    "projects": "프로젝트",
+    "emails": "이메일",
+    "tasks": "작업",
+    "invoices": "송장",
+    "reports": "보고서",
+    "documents": "문서",
+    "storage": "저장소",
+    "settings": "관리"
+  },
+  "DashboardPage": {
+    "containerTitle": "대시보드",
+    "totalRevenue": "총 수익",
+    "containerDescription": "SaasHQ에 오신 것을 환영합니다, 여기에서 귀하의 비즈니스에 대한 모든 중요한 정보를 볼 수 있습니다.",
+    "expectedRevenue": "예상 수익",
+    "activeUsers": "활성 사용자",
+    "accounts": "회사",
+    "opportunities": "거래",
+    "contacts": "연락처",
+    "leads": "리드",
+    "projects": "프로젝트",
+    "tasks": "작업",
+    "myTasks": "내 작업",
+    "invoices": "송장",
+    "documents": "문서",
+    "storage": "저장소"
+  },
+  "RegisterComponent": {
+    "cardTitle": "새 계정 만들기",
+    "cardDescription": "로그인하여 계정 생성",
+    "label": "언어",
+    "locale": "{locale, select, de {독일어} en {영어} cz {체코어} uk {우크라이나어} other {기타 언어}}"
+  },
+  "CrmModuleMenuComponent": {
+    "menuTitle": "영업",
+    "cardDescription": "로그인하여 계정 생성",
+    "label": "언어",
+    "locale": "{locale, select, de {독일어} en {영어} cz {체코어} uk {우크라이나어} other {기타 언어}}"
+  }
+}

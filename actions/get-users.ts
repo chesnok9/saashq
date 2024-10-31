@@ -1,0 +1,97 @@
+import { prismadb } from '@/lib/prisma';
+
+//Get all users for admin module
+export const getUsers = async () => {
+  const data = await prismadb.users.findMany({
+    orderBy: {
+      created_on: 'desc',
+    },
+  });
+  return data;
+};
+
+//Get active users for Selects in app etc
+export const getActiveUsers = async () => {
+  const data = await prismadb.users.findMany({
+    orderBy: {
+      created_on: 'desc',
+    },
+    where: {
+      userStatus: 'ACTIVE',
+    },
+  });
+  return data;
+};
+
+//Get new users by month for chart
+export const getUsersByMonthAndYear = async (year: number) => {
+  const users = await prismadb.users.findMany({
+    select: {
+      created_on: true,
+    },
+  });
+
+  if (!users) {
+    return {};
+  }
+
+  const usersByMonth = users.reduce(
+    (acc: Record<string, number>, user) => {
+      const yearCreated = new Date(user.created_on).getFullYear();
+      const month = new Date(user.created_on).toLocaleString('default', {
+        month: 'long',
+      });
+
+      if (yearCreated === year) {
+        acc[month] = (acc[month] || 0) + 1;
+      }
+
+      return acc;
+    },
+    {} satisfies Record<string, number>
+  );
+
+  const chartData = Object.keys(usersByMonth).map((month) => {
+    return {
+      name: month,
+      Number: usersByMonth[month],
+    };
+  });
+
+  return chartData;
+};
+
+//Get new users by month for chart
+export const getUsersByMonth = async () => {
+  const users = await prismadb.users.findMany({
+    select: {
+      created_on: true,
+    },
+  });
+
+  if (!users) {
+    return {};
+  }
+
+  const usersByMonth = users.reduce(
+    (acc: Record<string, number>, user) => {
+      const month = new Date(user.created_on).toLocaleString('default', {
+        month: 'long',
+      });
+
+      acc[month] = (acc[month] || 0) + 1;
+
+      return acc;
+    },
+    {} satisfies Record<string, number>
+  );
+
+  const chartData = Object.keys(usersByMonth).map((month) => {
+    return {
+      name: month,
+      Number: usersByMonth[month],
+    };
+  });
+
+  return chartData;
+};

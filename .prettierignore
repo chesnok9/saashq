@@ -1,0 +1,13 @@
+node_modules
+.vscode
+prisma
+public
+rossum
+shadcn-examples
+Dockerfile*
+*.sh
+Jenkinsfile
+*.yaml
+*.yml
+*.sql
+*.md

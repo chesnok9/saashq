@@ -1,0 +1,32 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["autofix", "unused-imports", "@typescript-eslint/eslint-plugin"],
+  "extends": ["eslint:recommended", "next/core-web-vitals"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
+  "globals": {
+    "React": true,
+    "cypress": true
+  },
+  "ignorePatterns": [".eslintrc.json"],
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "autofix/prefer-const": "warn",
+    "arrow-body-style": ["error", "as-needed"],
+    "@typescript-eslint/consistent-type-imports": "error",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}
